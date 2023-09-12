@@ -1,0 +1,7 @@
+/Users/miguelmagpoc/4952/labs/01/ChineseWebAPP/bin/Release/net7.0/publish/ChineseWebAPP
+/Users/miguelmagpoc/4952/labs/01/ChineseWebAPP/bin/Release/net7.0/publish/appsettings.Development.json
+/Users/miguelmagpoc/4952/labs/01/ChineseWebAPP/bin/Release/net7.0/publish/appsettings.json
+/Users/miguelmagpoc/4952/labs/01/ChineseWebAPP/bin/Release/net7.0/publish/ChineseWebAPP.dll
+/Users/miguelmagpoc/4952/labs/01/ChineseWebAPP/bin/Release/net7.0/publish/ChineseWebAPP.deps.json
+/Users/miguelmagpoc/4952/labs/01/ChineseWebAPP/bin/Release/net7.0/publish/ChineseWebAPP.runtimeconfig.json
+/Users/miguelmagpoc/4952/labs/01/ChineseWebAPP/bin/Release/net7.0/publish/ChineseWebAPP.pdb
