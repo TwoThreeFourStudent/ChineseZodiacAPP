@@ -15,6 +15,7 @@ public class IndexModel : PageModel
         if (ModelState.IsValid)
         {
             ZodiacSign = ZodiacUtils.GetZodiac(Year).ToLower();
+
         }
         return Page();
     }
