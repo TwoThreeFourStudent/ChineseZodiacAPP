@@ -13,7 +13,7 @@
 <div>
     @if (Model.ZodiacSign != null)
     {
-        <p>Zodiac Sign: @Model.ZodiacSign</p>
+        <p id= 'zodiacText'>Zodiac Sign: @Model.ZodiacSign</p>
         <img id="zodiacImage" src="~/images/@(Model.ZodiacSign.ToLower()).png"/>
     }
 </div>
@@ -26,8 +26,11 @@
 <script>
     function clearImage() {
         let imageElement = document.getElementById("zodiacImage");
+        let textElement = document.getElementById("zodiacText");
+
+        imageElement.src = "";
+        textElement.innerHTML= "";
         
-        imageElement.src = ""; 
         imageElement.classList.add("no-outline");
     }
 </script>
