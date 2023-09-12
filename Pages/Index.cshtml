@@ -7,15 +7,22 @@
     </div>
     <div>
         <button type="submit">Submit</button>
-        <button type="reset">Clear</button>
+        <button type="reset" onclick="clearImage()">Clear</button>
     </div>
 </form>
 <div>
     @if (Model.ZodiacSign != null)
     {
         <p>Zodiac Sign: @Model.ZodiacSign</p>
-        <!-- Reference the images from the wwwroot folder using the webroot path -->
-        <img src="~/images/@(Model.ZodiacSign.ToLower()).png" alt="Zodiac Sign Image" />
-
+        <img id="zodiacImage" src="~/images/@(Model.ZodiacSign.ToLower()).png" alt="Zodiac Sign Image" />
     }
 </div>
+
+<script>
+    function clearImage() {
+        let imageElement = document.getElementById("zodiacImage");
+        
+        imageElement.src = ""; 
+    }
+</script>
+
