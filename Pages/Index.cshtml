@@ -14,15 +14,21 @@
     @if (Model.ZodiacSign != null)
     {
         <p>Zodiac Sign: @Model.ZodiacSign</p>
-        <img id="zodiacImage" src="~/images/@(Model.ZodiacSign.ToLower()).png" alt="Zodiac Sign Image" />
+        <img id="zodiacImage" src="~/images/@(Model.ZodiacSign.ToLower()).png"/>
     }
 </div>
+<style>
+    .no-outline {
+        outline: none;
+    }
+</style>
 
 <script>
     function clearImage() {
         let imageElement = document.getElementById("zodiacImage");
         
         imageElement.src = ""; 
+        imageElement.classList.add("no-outline");
     }
 </script>
 
